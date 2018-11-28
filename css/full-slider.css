@@ -26,19 +26,39 @@
 /* each slide background color */ 
 .slide1 {
   background: #00bcd7;
+  position: absolute;
   left: 0;
+  top: 0;
+  bottom: 0;
+  right: 25%;
+  overflow: hidden;
 }
 .slide2 {
   background: #009788;
-  left: 100%
+  position: absolute;
+  left: 75%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: auto;
 }
 .slide3 {
   background: #ff5608;
-  left: 200%
+  position: absolute;
+  left: 175%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: auto;
 }
 .slide4 {
   background: #607d8d;
-  left: 300%;
+  position: absolute;
+  left: 275%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: auto;
 }
 /* Slider inner content */
 .slider h2 {
