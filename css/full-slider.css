@@ -17,21 +17,32 @@
   left: 0;
   top: 0;
   z-index: 0;
-  
   -webkit-transition: -webkit-transform 1600ms;
   transition: -webkit-transform 1600ms, transform 1600ms;
   -webkit-transform: scale(1);
   transform: scale(1);
   }
+  /* Learnmore Button*/
+  #learnmorebutton {
+    width: 160px;
+    height: 40px;
+    background-color: #0846B6;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    padding: 5px;
+    color:white;
+    text-align: center;
+  }
 /* each slide background color */ 
 .slide1 {
-  background: #00bcd7;
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   right: 25%;
   overflow: hidden;
+  background: linear-gradient(rgba(12, 89,204, 0.8), rgba(12, 89,204, 0.8)), url(../vendor/img/Random01.jpg);
+  background-size: 100% auto;
 }
 .slide2 {
   background: #009788;
@@ -41,6 +52,8 @@
   bottom: 0;
   right: 0;
   overflow-y: auto;
+  background: linear-gradient(rgba(12, 89,204, 0.8), rgba(12, 89,204, 0.8)), url(../vendor/img/Random02.jpg);
+  background-size: 100% auto;
 }
 .slide3 {
   background: #ff5608;
@@ -49,7 +62,9 @@
   top: 0;
   bottom: 0;
   right: 0;
-  overflow-y: auto;
+  overflow-x: hidden;
+  background: linear-gradient(rgba(12, 89,204, 0.8), rgba(12, 89,204, 0.8)), url(../vendor/img/Random03.jpeg);
+  background-size: 100% auto;
 }
 .slide4 {
   background: #607d8d;
@@ -58,7 +73,9 @@
   top: 0;
   bottom: 0;
   right: 0;
-  overflow-y: auto;
+  overflow-x: auto;
+  background: linear-gradient(rgba(12, 89,204, 0.8), rgba(12, 89,204, 0.8)), url(../vendor/img/Random04.jpg);
+  
 }
 /* Slider inner content */
 .slider h2 {
