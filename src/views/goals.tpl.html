@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @@include('_head.html', { "title": "Systems 5 Year Strategic Plan" })
+  <style type="text/css">
+	.bg-img {
+		position: relative;
+		width: 100%;
+		height: 400px;
+		background: url('assets/images/group-002.jpg') center top no-repeat;
+		background-size: cover;
+	}
+	.bg-img:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,#1976D2,#0846B6);
+		opacity: .9; 
+	}
+	div.polaroid {
+  		width: 365px;
+		height: 250px;
+  		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+	/* The Modal (background) */
+	.modal,.modal1,
+	.modal2,.modal3,
+	.modal4,.modal5 {
+  		display: none; /* Hidden by default */
+  		position: fixed; /* Stay in place */
+  		z-index: 1; /* Sit on top */
+  		left: 0;
+  		top: 0;
+  		width: 100%; /* Full width */
+  		height: 100%; /* Full height */
+  		overflow: auto; /* Enable scroll if needed */
+  		background-color: rgb(0,0,0); /* Fallback color */
+  		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+	/* Modal Content/Box */
+	.modal-content,.modal-content1,
+	.modal-content2,.modal-content3,
+	.modal-content4,.modal-content5 {
+		background-color: #fefefe;
+		margin: 15% auto; /* 15% from the top and centered */
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%; /* Could be more or less, depending on screen size */
+		height: 540px;
+	}
+	/* The Close Button */
+	.close,.close1,
+	.close2,.close3,
+	.close4,.close5 {
+		color: #ffffff;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus,
+	.close1:hover,
+	.close1:focus,
+	.close2:hover,
+	.close2:focus,
+	.close3:hover,
+	.close3:focus,
+	.close4:hover,
+	.close4:focus,
+	.close5:hover,
+	.close5:focus {
+		color: #ffffff;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	* {
+  		box-sizing: border-box;
+	}
+	/* Create three equal columns that floats next to each other */
+	.column1 {
+  		float: left;
+  		width: 8%;
+  		padding: 10px;
+  		height: 500px;
+	}
+	.column2 {
+  		float: left;
+  		width: 42%;
+  		padding: 10px;
+  		height: 500px;
+	}
+	.column3 {
+  		float: left;
+  		width: 50%;
+  		padding: 10px;
+  		height: 500px;
+	}
+	/* Clear floats after the columns */
+	.row:after {
+  		content: "";
+  		display: table;
+  		clear: both;
+	}
+	.no-scroll {
+		overflow-y: hidden;
+	}
+    </style>
+</head>
+<body>
+    <div class="wrapper bg-img">
+		<header class="hero">
+		@@include('_nav.html')
+		</header>
+    </div>
+    <div class="col-sm-10" style="margin-top: -100px; background-color:white; height:200px;">
+		<h1 style="margin-top: 25px; margin-left:20px; font-size:72px;color:#596377">GOALS AND OBJECTIVES</h1>
+        <p style="margin-top: -1px; margin-left:20px; font-weight:100">A targeted approach</p>
+    </div>
+    <div class="col-sm-12" style="background-color: white; margin-left: -40px">
+		<div class="col-sm-12" style="margin-left: 40px">
+			<div class="col-sm-4" style="margin-bottom:20px">
+				<div class="polaroid">
+					<div class="col-sm-12" style="text-align: left; color:#0846B6; font-size:22px; font-weight: 500; margin-top:15px">
+						<button id="myBtn" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
+							President's Office
+						</button>
+					</div>
+                    <div class="col-sm-12" style="text-align: left; font-size:18px;margin-top: 15px">
+                        Establish System's goals and desired outcomes and ensure excution within an innovation, flexible, 
+                        transparent and collaborative environment across Divisions.
+                    </div>
+                    <div class="col-sm-12" style="margin-top: 15px">
+						Icons will appear here.
+                    </div>
+				</div>
+			</div>
+			<div class="col-sm-4" style="margin-bottom:20px">
+				<div class="polaroid">
+					<div class="col-sm-12" style="text-align: left; color:#0846B6; font-size:22px; font-weight: 500; margin-top:15px">
+						<button id="myBtn1" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
+							AASHTOWare Products
+						</button>
+					</div>
+                    <div class="col-sm-12" style="text-align: left; font-size:18px;margin-top: 15px">
+                        Build and deliver world-class solutions and services for AASHTO and beyond.
+                    </div>
+                    <div class="col-sm-12" style="margin-top: 15px">
+						Icons will appear here.
+                    </div>
+				</div>
+			</div>
+			<div class="col-sm-4" style="margin-bottom:20px">
+				<div class="polaroid">
+					<div class="col-sm-12" style="text-align: left; color:#0846B6; font-size:22px; font-weight: 500; margin-top:15px">
+						<button id="myBtn2" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
+							ITI Products
+						</button>
+					</div>
+					<div class="col-sm-12" style="text-align: left; font-size:18px;margin-top: 15px">
+						Be the platform of choice through which civil and infrastructure owners, contractors, and consultants exchange information; ensuring value 
+						promised is value delivered.
+                    </div>
+                    <div class="col-sm-12" style="margin-top: 15px">
+						Icons will appear here.
+                    </div>
+				</div>
+			</div>
+			<div class="col-sm-4" style="margin-bottom:20px">
+				<div class="polaroid">
+					<div class="col-sm-12" style="text-align: left; color:#0846B6; font-size:22px; font-weight: 500; margin-top:15px">
+						<button id="myBtn3" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
+							Sales & Marketing
+						</button>
+					</div>
+                    <div class="col-sm-12" style="text-align: left; font-size:18px;margin-top: 15px">
+                        Expand Info Tech and AASHTOWare products and services to increase recurring revenue and broaden our customer base.
+                    </div>
+                    <div class="col-sm-12" style="margin-top: 15px">
+						Icons will appear here.
+                    </div>
+				</div>
+			</div>
+			<div class="col-sm-4" style="margin-bottom:20px">
+				<div class="polaroid">
+					<div class="col-sm-12" style="text-align: left; color:#0846B6; font-size:22px; font-weight: 500; margin-top:15px">Operations</div>
+                    <div class="col-sm-12" style="text-align: left; font-size:18px;margin-top: 15px">
+                        Advance progressive processes, infrastructure and operations that stimulate growth, performance and alignment. 
+                    </div>
+                    <div class="col-sm-12" style="margin-top: 15px">
+						Icons will appear here.
+                    </div>
+				</div>
+			</div>
+			<div class="col-sm-4" style="margin-bottom:20px">
+				<div class="polaroid">
+					<div class="col-sm-12" style="text-align: left; color:#0846B6; font-size:22px; font-weight: 500; margin-top:15px">Talent, Strategy and Communications</div>
+                    <div class="col-sm-12" style="text-align: left; font-size:18px;margin-top: 15px">
+                        Engage a diverse family of collaborative professionals who pioneer innovation while advancing the company culture and brand.
+                    </div>
+                    <div class="col-sm-12" style="margin-top: 15px">
+						Icons will appear here.
+                    </div>
+				</div>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+	</div>
+	<!-- The President's Office Modal -->
+    <div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="row">
+				<div class="column1" style="background-color:#aaa;">
+					<span class="close" style="float:left">&times;</span>
+				</div>
+				<div class="column2" style="background-color:#1976D2;">
+					<p style="font-size:36px; margin-top: -1px; margin-left:20px; margin-top: 32px; font-weight:100; color:#ffffff"><b>President's<br />Office</b></p>
+					<p style="margin-left:20px; font-weight:100; color: #ffffff">
+						Establish Systems’ goals and desired outcomes and ensure execution within an innovative, 
+						flexible, transparent and collaborative environment across Divisions.  
+					</p>
+				</div>
+				<div class="column3" style="background-color:#ffffff; overflow-y:scroll;">
+					<p style="font-size:18px">
+						<b>Set and communicate revenue growth goals to ensure long-term success.</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Sustained revenue growth of 5 - 7% per year for Systems Business (projections based on 
+							organic growth with current products/markets and conservative estimates in new 
+							products/markets)
+						</li>
+						<ul>
+							<li style="margin-bottom: 5px">AASHTOWare Products | 2 - 3% per year</li>
+							<li style="margin-bottom: 5px">ITI Products (SaaS offerings) | 12 - 18% per year</li>
+						</ul>
+						<li style="margin-bottom: 5px">
+							Total Systems Revenue |  50:50 AASHTOWare Products/ ITI Products by 2023
+						</li>
+						<li style="margin-bottom: 5px">
+							Shared Vision and Cross-Functional Accountability Across Divisions | shared understanding, 
+							agreed-upon priorities and plans, coordinated planning and investment, plus clear, functioning 
+							integration points
+						</li>
+						<li style="margin-bottom: 5px">
+							Baseline product and portfolio pro formas to validate financial goals (with Finance)
+						</li>
+						<li style="margin-bottom: 5px">
+							Pricing strategy and plan (with Sales and Marketing, Finance and ITI Products)
+						</li>
+						<li style="margin-bottom: 5px">
+							View of economics of current products and services and of proposed new projects
+						</li>
+					</ul>
+					<p style="font-size:18px">
+						<b>Evolve and manage the Systems business development, prioritization and planning process 
+							to bring the right ideas to market successfully.</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures (shared with Sales & Marketing)</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Business opportunity pipeline process 
+						</li>
+						<li style="margin-bottom: 5px">
+							Business case methodology
+						</li>
+						<li style="margin-bottom: 5px">
+							Research, analysis and reporting to provide ITI Products  with market direction, 
+							opportunities and current offering gaps
+						</li>
+						<li style="margin-bottom: 5px">
+							New products and services with clear estimates of revenue, time to market and return 
+						</li>
+						<li style="margin-bottom: 5px">
+							Reporting on and archiving of outcomes of new product or service initiatives 
+						</li>
+					</ul>
+					<p style="font-size:18px">
+						<b>Identify and assess new markets and ecosystems leveraging our current market 
+							foothold.
+						</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures (shared with Sales & Marketing)</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Identify customer/partner relationships outside of current DOT, construction and procurement arenas
+						</li>
+						<li style="margin-bottom: 5px">
+							Leverage business development relationships and contacts for access to and validation of new 
+							market or specific sales opportunities
+						</li>
+						<li style="margin-bottom: 5px">
+							Develop Market Expansion Strategy | focus and non-focus areas
+						</li>
+						<li style="margin-bottom: 5px">
+							Develop Partnership Program |  product and organizational partners 
+						</li>
+						<li style="margin-bottom: 5px">
+							Market research to analyze market focus, brand awareness and positioning 
+							(shared with Analytics) 
+						</li>
+						<li style="margin-bottom: 5px">
+							Resource plans to respond to and manage new market opportunities 
+						</li>
+					</ul>
+					<p style="font-size:18px">
+							<b>Identify, review, and execute on strategic acquisition and merger opportunities 
+								to support business growth and sustainability.
+							</b>
+						</p>
+						<p style="font-size:18px">
+							<i>Success Measures (shared with Finance)</i>
+						</p>
+						<ul>
+							<li style="margin-bottom: 5px">
+								Assess untapped and adjacent markets 
+							</li>
+							<li style="margin-bottom: 5px">
+								Internal work group and capacity building
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- The AASHTOWare Products Modal -->
+    <div id="myModal1" class="modal1">
+		<!-- Modal content -->
+		<div class="modal-content1">
+			<div class="row">
+				<div class="column1" style="background-color:#aaa;">
+					<span class="close1" style="float:left">&times;</span>
+				</div>
+				<div class="column2" style="background-color:#1976D2;">
+					<p style="font-size:36px; margin-top: -1px; margin-left:20px; margin-top: 32px; font-weight:100; color:#ffffff"><b>AASHTOWare<br />Products</b></p>
+					<p style="margin-left:20px; font-weight:100; color: #ffffff">
+						Build and deliver world-class solutions and services for AASHTO and beyond. 
+					</p>
+				</div>
+				<div class="column3" style="background-color:#ffffff; overflow-y:scroll;">
+					<p style="font-size:18px">
+						<b>Establish and evolve a shared vision, plan and goals with AASHTO to align applicable strategies and priorities.</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							AASHTOWare Products Division Strategic plan and annual planning process | alignment with AASHTO plan
+						</li>
+						<li style="margin-bottom: 5px">
+							Revenue strategy and contract model | progressive, profitable, fair and equitable
+						</li>
+						<li style="margin-bottom: 5px">
+							Trusted technology and business advisor and thought leader | strategic collaborations and discussions, 
+							presentations, publications, Division leadership pipeline
+						</li>
+						<li style="margin-bottom: 5px">
+							Established customer relationships | SCOA, T&AA, PTF and agencies
+						</li>
+					</ul>
+					<p style="font-size:18px">
+						<b>Create innovative solutions and services to ensure Info Tech’s position as the leading provider of transportation 
+							agency software solutions.</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							New products and services strategy | portfolio management process for new ideas (pipeline for future work), add-on 
+							services and extension framework (e.g., Agency View Designer service, third-party integrations, dashboards, agency-funded 
+							enhancements), and new technology research (e.g., blockchain)
+						</li>
+						<li style="margin-bottom: 5px">
+							Enhancement/services funding model/approach
+						</li>
+						<li style="margin-bottom: 5px">
+							Shared vision with ITI Products to maximize product offerings
+						</li>
+						<li style="margin-bottom: 5px">
+							AASHTOWare Project scope boundaries | gap areas where Info Tech can build services to address customer pain points (e.g., portals for external users)
+ 						</li>
+					</ul>
+					<p style="font-size:18px">
+						<b>Deliver superior quality solutions and services that maximize customer value and satisfaction. 
+						</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							100% AASHTOWare Project agency retention
+						</li>
+						<li style="margin-bottom: 5px">
+							Legacy agencies moved or moving to web and agencies on N/N-1 versions
+						</li>
+						<li style="margin-bottom: 5px">
+							Hosting services | 20 new production hosted agencies (4 per year), processes/controls 
+							as per SOC2 and NIST guidelines and achieving applicable certifications
+						</li>
+						<li style="margin-bottom: 5px">
+							20 new agency module adoptions (4 per year)
+						</li>
+						<li style="margin-bottom: 5px">
+							User-centered/iterative methodology | user experience, efficiency and low-complexity 
+						</li>
+						<li style="margin-bottom: 5px">
+							New major development on the latest technology platform (e.g.,SaaS with minimal configurations 
+							and no customizations)
+						</li>
+						<li style="margin-bottom: 5px">
+							Quality measurement strategy for solutions and services
+						</li>
+						<li style="margin-bottom: 5px">
+							&lt;/= 10% development return rate
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- The ITI Products Modal -->
+    <div id="myModal2" class="modal2">
+		<!-- Modal content -->
+		<div class="modal-content2">
+			<div class="row">
+				<div class="column1" style="background-color:#aaa;">
+					<span class="close2" style="float:left">&times;</span>
+				</div>
+				<div class="column2" style="background-color:#1976D2;">
+					<p style="font-size:36px; margin-top: -1px; margin-left:20px; margin-top: 32px; font-weight:100; color:#ffffff"><b>ITI<br />Products</b></p>
+					<p style="margin-left:20px; font-weight:100; color: #ffffff">
+						Be the platform of choice through which civil and infrastructure owners, contractors, and consultants exchange information; ensuring 
+						value promised is value delivered. 
+					</p>
+				</div>
+				<div class="column3" style="background-color:#ffffff; overflow-y:scroll;">
+					<p style="font-size:18px">
+						<b>Create a standardized look, feel, tone, and voice to both differentiate our solutions and improve efficiency for users.</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Appia, Doc Express and Bid Express migrated to Causeway
+						</li>
+						<li style="margin-bottom: 5px">
+							Causeway for all services
+						</li>
+						<li style="margin-bottom: 5px">
+							BidX’s Plans and SBN services to be replaced with bigger and better services
+						</li>
+						<li style="margin-bottom: 5px">
+							Efficiency measure | TBD
+						</li>
+						<li style="margin-bottom: 5px">
+							“Interchange” | Solution landing page
+						</li>
+						<li style="margin-bottom: 5px">
+							One user base with access to all services 
+						</li>
+					</ul>
+					<p style="font-size:18px">
+						<b>Employ human-centered design to create simple and positive experiences that remove mundane and complex tasks from our users’ lives. 
+							</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Design thinking for discovery, prototyping and launch
+						</li>
+						<li style="margin-bottom: 5px">
+							Codified user experience strategy
+						</li>
+						<li style="margin-bottom: 5px">
+							Design thinking employee onboarding and training 
+						</li>
+						<li style="margin-bottom: 5px">
+							Customer Success Team | vision, structure, responsibility and metrics
+						</li>
+					</ul>
+					<p style="font-size:18px">
+						<b>Expand our services and offer solutions that fill the gaps between owners, consultants and contractors to provide a cohesive construction 
+							project delivery experience.
+						</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Shared vision with AASHTOWare Products and Sales and Marketing to maximize product offerings
+						</li>
+						<li style="margin-bottom: 5px">
+							Business Analysis | championing industry problems by discovering gaps and integration points (with Sales and Marketing)
+						</li>
+						<li style="margin-bottom: 5px">
+							High value opportunities and integration points | Appia Change Orders integrated with Doc Express
+						</li>
+						<li style="margin-bottom: 5px">
+							New product development | Vendor Intake in production by Q4 2019, Photos in production by Q3 2019, Plans, TBD
+						</li>
+					</ul>
+					<p style="font-size:18px">
+						<b>Integrate with complementary third-party products and services supporting the industry from concept to delivery; establishing trust, 
+							differentiating our value, and to be the primary platform for our users.
+						</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Integrations | Prioritized list of high value industry third-party products
+						</li>
+						<li style="margin-bottom: 5px">
+							Open APIs
+						</li>
+						<li style="margin-bottom: 5px">
+							AASHTOWare Project Integration 
+						</li>
+						<li style="margin-bottom: 5px">
+							Workday with Appia Payments
+						</li>
+					</ul>
+					<p style="font-size:18px">
+						<b>Establish a continuous improvement model to create a sustainable, high-quality platform of tools and services that outpaces the needs 
+							of the industry.
+						</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Continuous deployment process
+						</li>
+						<li style="margin-bottom: 5px">
+							Architecture review process and guidelines
+						</li>
+						<li style="margin-bottom: 5px">
+							10% reduction in defects year over year | categorization of software defects
+						</li>
+						<li style="margin-bottom: 5px">
+							Releases | 1 in 3 releases maintenance and enhancing existing services
+						</li>
+						<li style="margin-bottom: 5px">
+							Data-driven decision making through analytics | Usage analytics (Google Analytics and HotJar); Performance analytics (Skylight and Xray); 
+							Customer Support analytics (Cisco and SalesForce)
+						</li>
+						<li style="margin-bottom: 5px">
+							95% customer/account retention (with Sales & Marketing)
+						</li>
+						<li style="margin-bottom: 5px">
+							A Net Promoter Score of 30 or higher for each service
+						</li>
+						<li style="margin-bottom: 5px">
+							Feature success metrics and reporting to establish and drive improvement
+						</li>
+						<li style="margin-bottom: 5px">
+							ITI Products talent growth strategy and capacity planning
+						</li>
+						<li style="margin-bottom: 5px">
+							ITI Products Leadership Training 
+						</li>
+					</ul>
+					<p style="font-size:18px">
+						<b>Establish a continuous improvement model to create a sustainable, high-quality platform of tools and services that outpaces the needs 
+							of the industry.
+						</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Open Source community contribution plan
+						</li>
+						<li style="margin-bottom: 5px">
+							Publication and presentation pipeline | managerial, technical and business solutions
+						</li>
+						<li style="margin-bottom: 5px">
+							Robust customer learning platform (with Marketing)
+						</li>
+						<li style="margin-bottom: 5px">
+							Education program | thought leadership and products in classrooms to support user centered-design and development, early adoption and 
+							brand awareness (shared across divisions)
+						</li>
+						<li style="margin-bottom: 5px">
+							Strategic partnerships | AWS Partner Program, TBD
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- The Sales & Marketing Modal -->
+    <div id="myModal3" class="modal3">
+		<!-- Modal content -->
+		<div class="modal-content3">
+			<div class="row">
+				<div class="column1" style="background-color:#aaa;">
+					<span class="close3" style="float:left">&times;</span>
+				</div>
+				<div class="column2" style="background-color:#1976D2;">
+					<p style="font-size:36px; margin-top: -1px; margin-left:20px; margin-top: 32px; font-weight:100; color:#ffffff"><b>Sales &amp; Marketing</b></p>
+					<p style="margin-left:20px; font-weight:100; color: #ffffff">
+						Expand Info Tech and AASHTOWare products and services to increase recurring revenue and broaden our customer base.
+					</p>
+				</div>
+				<div class="column3" style="background-color:#ffffff; overflow-y:scroll;">
+					<p style="font-size:18px">
+						<b>Significantly grow customer base and extend new products within organizations through responsive account management, targeted marketing 
+							efforts and consistent focus on customer success.</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Short term revenue goals by product line (point of sale by 2020)
+						</li>
+						<ul>
+							<li style="margin-bottom: 5px">Bidx revenue of $10.5 million</li>
+							<li style="margin-bottom: 5px">Appia revenue of $2 million</li>
+							<li style="margin-bottom: 5px">Bid Express revenue of $1 million</li>
+							<li style="margin-bottom: 5px">Doc Express revenue of $350,000</li>
+							<li style="margin-bottom: 5px">Sync service revenue of $500,000</li>
+						</ul>
+						<li style="margin-bottom: 5px">
+							16M+ bidding-related services revenue by 2023
+						</li>
+						<li style="margin-bottom: 5px">
+							ITI Products: 95% customer/account retention (retention and renewal by product)
+						</li>
+						<li style="margin-bottom: 5px">
+							AASHTOWare Project Products: 100% customer/account retention (retention and renewal by customer)
+						</li>
+						<li style="margin-bottom: 5px">
+							10+ agency/owners sponsoring or mandating Appia/Doc Express
+						</li>
+						<li style="margin-bottom: 5px">
+							Lead generation x2 year over year 
+						</li>
+					</ul>
+					<p style="font-size:18px">
+						<b>Grow business development relationships with infrastructure and technology industry leaders to 
+							establish profitable strategic partnerships and promote brand awareness and thought leadership.</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Partner pipeline methodology (identification to agreement)
+						</li>
+						<li style="margin-bottom: 5px">
+							Large firm corporate-wide adoption and standardization
+						</li>
+						<li style="margin-bottom: 5px">
+							Annual conference co-presentations and publications detailing product, customer and project success 
+						</li>
+						<li style="margin-bottom: 5px">
+							Customer-driven enhancements and new product requests | Quarterly strategic communication and marketing and storytelling
+						</li>
+						<li style="margin-bottom: 5px">
+							Thought leadership and brand awareness measurement 
+						</li>
+					</ul>
+					<p style="font-size:18px">
+						<b>Expand adoption of AASHTOWare Project through strategic positioning and promotion of additional modules, hosting, services 
+							and integrations within the ecosystem. 
+						</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures (shared with AASHTOWare Products Division goals)</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Over $8 million in agency service revenue per year for next three years (includes service unit work, direct contract, and hosting)
+						</li>
+						<li style="margin-bottom: 5px">
+							100% client/server agencies migrated to web
+						</li>
+						<li style="margin-bottom: 5px">
+							100% web agencies latest/n-1 versions
+						</li>
+						<li style="margin-bottom: 5px">
+							20 new production hosted agencies (4 per year)
+						</li>
+						<li style="margin-bottom: 5px">
+							20 new agency module adoptions (4 per year)
+						</li>
+						<li style="margin-bottom: 5px">
+							Partner with AASHTO and the PTF on marketing, planning, and deliverables
+						</li>
+					</ul>
+					<p style="font-size:18px">
+						<b>Strategically grow the sales and marketing team and associated capacity to exceed corporate revenue goals.</b>
+					</p>
+					<p style="font-size:18px">
+						<i>Success Measures</i>
+					</p>
+					<ul>
+						<li style="margin-bottom: 5px">
+							Formalized internal sales model for field and account management | territory, product, customer/account
+						</li>
+						<li style="margin-bottom: 5px">
+							Annual pricing review and schedule (with President’s Office and Finance)
+						</li>
+						<li style="margin-bottom: 5px">
+							Sales and marketing talent strategy and capacity planning
+						</li>
+						<li style="margin-bottom: 5px">
+							Management by objectives (MBO model) and incentive plan
+						</li>
+						<li style="margin-bottom: 5px">
+							Sales Training Program
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/application.min.js"></script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById('myModal');
+		
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+		
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+		
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		  document.documentElement.style.overflow ='hidden';
+		}
+		
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		  document.documentElement.style.overflow = 'visible';
+		}
+		
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+			modal.style.display = "none";
+		  }
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal1 = document.getElementById('myModal1');
+		
+		// Get the button that opens the modal
+		var btn1 = document.getElementById("myBtn1");
+		
+		// Get the <span> element that closes the modal
+		var span1= document.getElementsByClassName("close1")[0];
+		
+		// When the user clicks the button, open the modal 
+		btn1.onclick = function() {
+		  modal1.style.display = "block";
+		  document.documentElement.style.overflow ='hidden';
+		}
+		
+		// When the user clicks on <span> (x), close the modal
+		span1.onclick = function() {
+		  modal1.style.display = "none";
+		  document.documentElement.style.overflow = 'visible';
+		}
+		
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal1) {
+			modal1.style.display = "none";
+		  }
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal2 = document.getElementById('myModal2');
+			
+		// Get the button that opens the modal
+		var btn2 = document.getElementById("myBtn2");
+			
+		// Get the <span> element that closes the modal
+		var span2= document.getElementsByClassName("close2")[0];
+			
+		// When the user clicks the button, open the modal 
+		btn2.onclick = function() {
+		  modal2.style.display = "block";
+		  document.documentElement.style.overflow ='hidden';
+		}
+			
+		// When the user clicks on <span> (x), close the modal
+		span2.onclick = function() {
+		  modal2.style.display = "none";
+		  document.documentElement.style.overflow = 'visible';
+		}
+			
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal2) {
+			modal2.style.display = "none";
+		  }
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal3 = document.getElementById('myModal3');
+			
+		// Get the button that opens the modal
+		var btn3 = document.getElementById("myBtn3");
+			
+		// Get the <span> element that closes the modal
+		var span3= document.getElementsByClassName("close3")[0];
+			
+		// When the user clicks the button, open the modal 
+		btn3.onclick = function() {
+		  modal3.style.display = "block";
+		  document.documentElement.style.overflow ='hidden';
+		}
+			
+		// When the user clicks on <span> (x), close the modal
+		span3.onclick = function() {
+		  modal3.style.display = "none";
+		  document.documentElement.style.overflow = 'visible';
+		}
+			
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal3) {
+			modal3.style.display = "none";
+		  }
+		}
+	</script>
+</body>

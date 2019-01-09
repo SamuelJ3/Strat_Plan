@@ -1,0 +1,46 @@
+@import 'normalize';
+@import 'grid';
+@import 'variables';
+@import 'glide';
+@import 'layout';
+@import 'typography';
+
+
+/* General */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: white;
+  background: $medium-blue;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html,
+body { 
+  height: 100%; 
+  min-height: 100%;
+  position: relative;
+}
+
+html {
+  font-size: 62.5%; /* Now 10px = 1rem! */
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      overflow-x: hidden;
+}
+
+body {
+  font-family: $sans-font-family!important;
+  font-size: 1.6rem;
+  color: #2C3E50;
+}
