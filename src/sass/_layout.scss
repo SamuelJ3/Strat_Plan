@@ -4,8 +4,8 @@
 	margin: 0 auto;
   width: 100%;
   min-width: 1200px; //not responsive (yet) ;)
-	max-width: 1440px;
-	border-left: 1px solid $pale-grey;
+  max-width: 1440px;
+  border-left: 1px solid $pale-grey;
 	border-right: 1px solid $pale-grey;
 }
 
@@ -89,7 +89,7 @@ header.hero {
 	position: relative;
 	width: 100%;
 	max-width: 1440px;
-	height: 700px;
+	height: 800px;
 	color: #fff;
   overflow: hidden;
 
