@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @@include('_head.html', { "title": "Systems 5 Year Strategic Plan" })
+  <style type="text/css">
+	.bg-img {
+		position: relative;
+		width: 100%;
+		height: 400px;
+		background: url('assets/images/group-002.jpg') center top no-repeat;
+		background-size: cover;
+	}
+	.bg-img:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,#1976D2,#0846B6);
+		opacity: .9; 
+	}
+	div.polaroid {
+  		width: 365px;
+		height: 250px;
+  		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+	/* The Modal (background) */
+	.modal {
+  		display: none; /* Hidden by default */
+  		position: fixed; /* Stay in place */
+  		z-index: 1; /* Sit on top */
+  		left: 0;
+  		top: 0;
+  		width: 100%; /* Full width */
+  		height: 100%; /* Full height */
+  		overflow: auto; /* Enable scroll if needed */
+  		background-color: rgb(0,0,0); /* Fallback color */
+  		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+	/* Modal Content/Box */
+	.modal-content {
+		background-color: #fefefe;
+		margin: 15% auto; /* 15% from the top and centered */
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%; /* Could be more or less, depending on screen size */
+		height: 540px;
+	}
+	/* The Close Button */
+	.close {
+		color: #ffffff;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #ffffff;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	* {
+  		box-sizing: border-box;
+	}
+	/* Create three equal columns that floats next to each other */
+	.column1 {
+  		float: left;
+  		width: 8%;
+  		padding: 10px;
+  		height: 500px;
+	}
+	.column2 {
+  		float: left;
+  		width: 42%;
+  		padding: 10px;
+  		height: 500px;
+	}
+	.column3 {
+  		float: left;
+  		width: 50%;
+  		padding: 10px;
+  		height: 500px;
+	}
+	/* Clear floats after the columns */
+	.row:after {
+  		content: "";
+  		display: table;
+  		clear: both;
+	}
+	.no-scroll {
+		overflow-y: hidden;
+	}
+    </style>
+</head>
+<body>
+    <div class="wrapper bg-img">
+		<header class="hero">
+		@@include('_nav.html')
+		</header>
+    </div>
+    <div class="col-sm-10" style="margin-top: -100px; background-color:white; height:790px;">
+		<h1 style="margin-top: 25px; margin-left:20px; font-size:72px;color:#596377">ABOUT</h1>
+		<!-- <p style="margin-top: -1px; margin-left:20px; font-weight:100">Infrastructure Construction & Product Ecosystem</p>
+		<div class="col-sm-1" style="margin-left: 45px; color:#1976D2; font-size:14px">01.</div>
+		<div class="col-sm-1" style="margin-left: -55px;"><hr style="border: 0.5px solid #1976D2;" /></div>-->
+		<div class="col-sm-10" style="margin-left: 20px">
+			<p style="font-size: 2.2rem;">
+                <b style="font-size: 2.6rem">5-Year Strategic Plan</b>
+                <br /><br />
+				Welcome to the Systems 5-Year Strategic Vision and Plan. This vision and plan resulted from 
+				the collaboration of dozens of Info Tech leaders over the course of several months. It is 
+				grounded the core values and principles that have driven our success for over 40 years. 
+				This is a living document that we will revisit regularly. Following is a description of 
+				the sections of the vision and plan.
+				<br /><br />
+				The Vision section presents our vision for the Info Tech Systems business, including the 
+				historical context and ecosystem factors on which it is based. 
+                <br /><br />
+				The Goals section presents each division’s 5-year Goal. This goal is the division’s primary 
+				5-year focus. Each Goal has the 2-3 year Objectives through which the division will advance 
+				toward their Goal. Each Objective has the Success Measures by which we will know the 
+				Objective has been successfully reached. These Goals and Objectives are the foundation from 
+				which our annual division, department, units, and personal goals cascade.
+				<br /><br />
+                The Why section explains the reasoning and motivations on which the vision and plan are based.
+                <br /><br />
+				The Ecosystem section provides an overview of the construction infrastructure ecosystem within 
+				which Info Tech operates and the product ecosystem comprised of Info Tech’s ITI Products 
+				services and the AASHTOWare Project product.
+				<br /><br />
+				If you have questions about your division’s Goal, Objectives, or Success Measures, please contact 
+				your Director. For general questions and feedback about the Vision and Plan, please contact the 
+				Director for Strategy and Innovation.
+			</p>
+		</div>
+	</div>
+</body>
