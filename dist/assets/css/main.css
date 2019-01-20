@@ -1548,18 +1548,25 @@ template {
 
 /* line 2, src/sass/_layout.scss */
 .wrapper {
+  position: relative;
   padding: 0;
   margin: 0 auto;
   width: 100%;
+  height: 100%;
   min-width: 1200px;
   max-width: 1440px;
-  border-left: 1px solid #E6EDF2;
-  border-right: 1px solid #E6EDF2;
+}
+
+@media screen and (min-width: 2000px) {
+  /* line 2, src/sass/_layout.scss */
+  .wrapper {
+    max-width: 1800px;
+  }
 }
 
 /* Nav
  ========================================================================== */
-/* line 15, src/sass/_layout.scss */
+/* line 22, src/sass/_layout.scss */
 nav.container {
   position: absolute;
   top: 0;
@@ -1569,17 +1576,17 @@ nav.container {
   z-index: 2000;
 }
 
-/* line 23, src/sass/_layout.scss */
+/* line 30, src/sass/_layout.scss */
 nav.container .row [class^=col-] {
   padding: 0 !important;
 }
 
-/* line 27, src/sass/_layout.scss */
+/* line 34, src/sass/_layout.scss */
 nav.container .row [class^=col-]:last-child {
   text-align: right;
 }
 
-/* line 31, src/sass/_layout.scss */
+/* line 38, src/sass/_layout.scss */
 nav.container a.logo {
   display: inline-block;
   width: 200px;
@@ -1587,13 +1594,13 @@ nav.container a.logo {
   margin: 32px 32px 0 120px;
 }
 
-/* line 37, src/sass/_layout.scss */
+/* line 44, src/sass/_layout.scss */
 nav.container a.logo img {
   width: 200px;
   height: auto;
 }
 
-/* line 44, src/sass/_layout.scss */
+/* line 51, src/sass/_layout.scss */
 nav.container ul {
   display: inline-block;
   list-style: none;
@@ -1604,7 +1611,7 @@ nav.container ul {
   background: #1976D2;
 }
 
-/* line 53, src/sass/_layout.scss */
+/* line 60, src/sass/_layout.scss */
 nav.container ul li {
   font-size: 1.6rem;
   display: inline-block;
@@ -1612,7 +1619,7 @@ nav.container ul li {
   padding: 0;
 }
 
-/* line 59, src/sass/_layout.scss */
+/* line 66, src/sass/_layout.scss */
 nav.container ul li a {
   display: inline-block;
   height: 90px;
@@ -1626,7 +1633,7 @@ nav.container ul li a {
   transition: all 0.25s ease-in-out;
 }
 
-/* line 74, src/sass/_layout.scss */
+/* line 81, src/sass/_layout.scss */
 nav.container ul li:hover a, nav.container ul li.active a {
   background: #0846B6;
   color: #fff;
@@ -1634,12 +1641,12 @@ nav.container ul li:hover a, nav.container ul li.active a {
 
 /* Landing Hero and Slider
  ========================================================================== */
-/* line 88, src/sass/_layout.scss */
+/* line 95, src/sass/_layout.scss */
 header.hero {
   position: relative;
   width: 100%;
+  height: 100%;
   max-width: 1440px;
-  height: 800px;
   color: #fff;
   overflow: hidden;
   /* < Arrows > */
@@ -1647,7 +1654,7 @@ header.hero {
   /* Content */
 }
 
-/* line 96, src/sass/_layout.scss */
+/* line 103, src/sass/_layout.scss */
 header.hero .glide,
 header.hero .glide__slides,
 header.hero .glide__slide {
@@ -1655,7 +1662,7 @@ header.hero .glide__slide {
   height: 800px;
 }
 
-/* line 105, src/sass/_layout.scss */
+/* line 112, src/sass/_layout.scss */
 header.hero .glide__arrow {
   position: absolute;
   top: 0;
@@ -1668,32 +1675,32 @@ header.hero .glide__arrow {
   background: linear-gradient(to bottom right, rgba(0, 153, 255, 0.1) 0%, rgba(25, 118, 210, 0.1) 49%, rgba(8, 70, 182, 0.1) 100%);
 }
 
-/* line 115, src/sass/_layout.scss */
+/* line 122, src/sass/_layout.scss */
 header.hero .glide__arrow--left {
   left: 0;
   border-right: 1px solid #1976D2;
 }
 
-/* line 119, src/sass/_layout.scss */
+/* line 126, src/sass/_layout.scss */
 header.hero .glide__arrow--left .icon {
   margin-left: 50px;
   background: #0846B6 url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2216%22%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M0%208a.93.93%200%200%201%20.226-.55l6.4-6.8a.801.801%200%200%201%201.13-.032c.312.28.32.827.032%201.132L2.651%207.2H23.2a.8.8%200%201%201%200%201.6H2.65l5.137%205.45c.288.304.268.838-.031%201.131a.801.801%200%200%201-1.131-.03L.226%208.55A.711.711%200%200%201%200%208z%22%2F%3E%3C%2Fsvg%3E") no-repeat center center;
 }
 
-/* line 125, src/sass/_layout.scss */
+/* line 132, src/sass/_layout.scss */
 header.hero .glide__arrow--right {
   right: 0;
   width: 300px;
   border-left: 1px solid #1976D2;
 }
 
-/* line 130, src/sass/_layout.scss */
+/* line 137, src/sass/_layout.scss */
 header.hero .glide__arrow--right .icon {
   margin-left: -32px;
   background: #0846B6 url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2216%22%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M24%208a.93.93%200%200%200-.226-.55l-6.4-6.8a.801.801%200%200%200-1.13-.032c-.312.28-.32.827-.032%201.132l5.137%205.45H.8a.8.8%200%201%200%200%201.6h20.55l-5.137%205.45c-.288.304-.268.838.031%201.131a.801.801%200%200%200%201.131-.03l6.4-6.801A.711.711%200%200%200%2024%208z%22%2F%3E%3C%2Fsvg%3E") no-repeat center center;
 }
 
-/* line 136, src/sass/_layout.scss */
+/* line 143, src/sass/_layout.scss */
 header.hero .glide__arrow .icon {
   position: relative;
   height: 48px;
@@ -1701,7 +1708,7 @@ header.hero .glide__arrow .icon {
   border-radius: 48px;
 }
 
-/* line 142, src/sass/_layout.scss */
+/* line 149, src/sass/_layout.scss */
 header.hero .glide__arrow .icon:before, header.hero .glide__arrow .icon:after {
   z-index: -1;
   content: "";
@@ -1723,13 +1730,13 @@ header.hero .glide__arrow .icon:before, header.hero .glide__arrow .icon:after {
           animation: pulse 3s linear infinite;
 }
 
-/* line 161, src/sass/_layout.scss */
+/* line 168, src/sass/_layout.scss */
 header.hero .glide__arrow .icon:after {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
-/* line 166, src/sass/_layout.scss */
+/* line 173, src/sass/_layout.scss */
 header.hero .glide__arrow .icon:hover:before, header.hero .glide__arrow .icon:hover:after {
   -webkit-animation: none;
           animation: none;
@@ -1773,7 +1780,7 @@ header.hero .glide__arrow .icon:hover:before, header.hero .glide__arrow .icon:ho
   }
 }
 
-/* line 195, src/sass/_layout.scss */
+/* line 202, src/sass/_layout.scss */
 header.hero .glide__bullets {
   position: absolute;
   bottom: 124px;
@@ -1784,7 +1791,7 @@ header.hero .glide__bullets {
   text-align: center;
 }
 
-/* line 204, src/sass/_layout.scss */
+/* line 211, src/sass/_layout.scss */
 header.hero .glide__bullets .glide__bullet {
   cursor: pointer;
   height: 2px;
@@ -1797,12 +1804,12 @@ header.hero .glide__bullets .glide__bullet {
   transition: background 0.25s ease-in-out;
 }
 
-/* line 214, src/sass/_layout.scss */
+/* line 221, src/sass/_layout.scss */
 header.hero .glide__bullets .glide__bullet--active {
   background: #0846B6;
 }
 
-/* line 223, src/sass/_layout.scss */
+/* line 230, src/sass/_layout.scss */
 header.hero .glide__slide .content {
   position: relative;
   height: 100%;
@@ -1811,30 +1818,75 @@ header.hero .glide__slide .content {
   padding-top: 200px;
 }
 
-/* line 230, src/sass/_layout.scss */
+/* line 237, src/sass/_layout.scss */
 header.hero .glide__slide .content p {
   color: #fff;
 }
 
-/* line 234, src/sass/_layout.scss */
+/* line 241, src/sass/_layout.scss */
 header.hero .glide__slide .content.vision {
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 153, 255, 0.95)), color-stop(49%, rgba(25, 118, 210, 0.95)), to(rgba(8, 70, 182, 0.95))), url("../images/group-002.jpg") no-repeat center center;
   background: linear-gradient(to bottom right, rgba(0, 153, 255, 0.95) 0%, rgba(25, 118, 210, 0.95) 49%, rgba(8, 70, 182, 0.95) 100%), url("../images/group-002.jpg") no-repeat center center;
   background-size: cover;
 }
 
-/* line 240, src/sass/_layout.scss */
+/* line 247, src/sass/_layout.scss */
 header.hero .glide__slide .content.goals {
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 153, 255, 0.95)), color-stop(49%, rgba(25, 118, 210, 0.95)), to(rgba(8, 70, 182, 0.95))), url("../images/group-001.jpg") no-repeat center center;
   background: linear-gradient(to bottom right, rgba(0, 153, 255, 0.95) 0%, rgba(25, 118, 210, 0.95) 49%, rgba(8, 70, 182, 0.95) 100%), url("../images/group-001.jpg") no-repeat center center;
   background-size: cover;
 }
 
-/* line 246, src/sass/_layout.scss */
+/* line 253, src/sass/_layout.scss */
 header.hero .glide__slide .content.why {
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 153, 255, 0.95)), color-stop(49%, rgba(25, 118, 210, 0.95)), to(rgba(8, 70, 182, 0.95))), url("../images/post-its.jpg") no-repeat center center;
   background: linear-gradient(to bottom right, rgba(0, 153, 255, 0.95) 0%, rgba(25, 118, 210, 0.95) 49%, rgba(8, 70, 182, 0.95) 100%), url("../images/post-its.jpg") no-repeat center center;
   background-size: cover;
+}
+
+@media screen and (min-width: 2000px) {
+  /* line 95, src/sass/_layout.scss */
+  header.hero {
+    max-width: 1800px;
+  }
+}
+
+/* line 268, src/sass/_layout.scss */
+.hero--landing {
+  min-height: 800px;
+  margin: auto;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 275, src/sass/_layout.scss */
+.index {
+  padding: 0;
+  margin: 25px 0;
+  display: inline-block;
+}
+
+/* line 280, src/sass/_layout.scss */
+.index .key {
+  font-size: 1.4rem;
+  color: #1976D2;
+}
+
+/* line 285, src/sass/_layout.scss */
+.index hr {
+  border: 0.5px solid #0846B6;
+  display: inline-block;
+  width: 95px;
+  margin: 0 5px 5px 5px;
+}
+
+/* line 292, src/sass/_layout.scss */
+.index .value {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* line 2, src/sass/_typography.scss */
@@ -1869,6 +1921,25 @@ p {
   letter-spacing: 0;
   line-height: 1.5;
   max-width: 800px;
+}
+
+/* line 32, src/sass/_typography.scss */
+h1.cut-out-heading {
+  position: relative;
+  width: 90%;
+  font-size: 72px;
+  background: #fff;
+  color: #596377;
+  padding: 25px 0 0 15px;
+  margin: -75px 0 0 -15px;
+  z-index: 5000;
+}
+
+/* line 42, src/sass/_typography.scss */
+h1.cut-out-heading small {
+  font-weight: 100;
+  font-size: 2.4rem;
+  display: block;
 }
 
 /*--------Main Styles--------*/

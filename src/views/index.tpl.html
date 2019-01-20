@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-  @@include('_head.html', { "title": "Systems 5 Year Strategic Plan" })
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Systems 5 Year Strategic Plan</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
   <style type="text/css">
     button.mbtn {
       padding:0.6em 2em;
@@ -18,8 +22,38 @@
 </head>
 <body>
 	<div class="wrapper wrapper--landing">
-		<header class="hero hero--landing">
-      @@include('_nav.html')
+		<header class="hero">
+      <nav class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="index.html" class="logo">
+              <img src="/assets/images/logo-white.png" alt="home">
+            </a>
+          </div>
+          <div class="col-sm-8">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="vision.html">Vision</a>
+              </li>
+              <li>
+                <a href="goals.html">Goals</a>
+              </li>
+              <li>
+                <a href="why.html">Why</a>
+              </li>
+              <li>
+                <a href="ecosystem.html">Ecosystem</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+            </ul>
+          </div>     
+        </div>
+      </nav>
       <div class="glide">
         <div class="glide__arrows" data-glide-el="controls">
           <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
