@@ -28,6 +28,40 @@
 		background-image: linear-gradient(to bottom right,#1976D2,#0846B6);
 		opacity: .9; 
 	}
+	.single-service {
+	background-color: #f9f9ff;
+	padding: 2px 15px 0px 15px;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.single-service:hover {
+	box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.5);
+	cursor: pointer;
+	background-color: #3898f8;
+	}
+
+	.single-service:hover h4, .single-service:hover p, .single-service:hover .lnr {
+	color: #fff;
+	}
+
+	.single-service h4 {
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color:#0846B6;
+	}
+
+	.single-service h4 .lnr {
+	margin-right: 15px;
+	}
+
 	div.polaroid {
   		width: 365px;
 		height: 250px;
@@ -39,7 +73,7 @@
 	.modal4,.modal5 {
   		display: none; /* Hidden by default */
   		position: fixed; /* Stay in place */
-  		z-index: 1; /* Sit on top */
+  		z-index: 6001; /* Sit on top */
   		left: 0;
   		top: 0;
   		width: 100%; /* Full width */
@@ -165,99 +199,87 @@
 		<div class="row">
 			<div class="col-sm-12" style="background-color: white; margin-left: -40px">
 				<div class="col-sm-12" style="margin-left: 40px">
-					<div class="col-sm-4" style="margin-bottom:20px">
-						<div class="polaroid">
-							<div class="col-sm-12" style="text-align: left; color:#0846B6; font-size:22px; font-weight: 500; margin-top:15px">
-								<button id="myBtn" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
-									President's Office
-								</button>
-							</div>
-							<div class="col-sm-12" style="text-align: left; font-size:18px;margin-top: 15px">
-								Establish System's goals and desired outcomes and ensure excution within an innovation, flexible, 
-								transparent and collaborative environment across Divisions.
-							</div>
-							<div class="col-sm-12" style="margin-top: 15px">
-								Icons will appear here.
+					<a id="myBtn" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
+						<div class="col-sm-4" style="margin-bottom:20px">
+							<div class="single-service" style="width: 365px; height: 250px; position:relative">
+								<h4><span class="lnr" style="text-align: left; font-size:22px; font-weight: 500; margin-top:15px">President's Office</span></h4>
+								<p style="text-align: left; font-size:18px;margin-top: 15px">
+									Establish System's goals and desired outcomes and ensure excution within an innovation, flexible, 
+									transparent and collaborative environment across Divisions.
+								</p>
+								<div style="position:absolute; height:30px; bottom:0;">
+									Icons will appear here.
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-4" style="margin-bottom:20px">
-						<div class="polaroid">
-							<div class="col-sm-12" style="text-align: left; color:#0846B6; font-size:22px; font-weight: 500; margin-top:15px">
-								<button id="myBtn1" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
-									AASHTOWare Products
-								</button>
-							</div>
-							<div class="col-sm-12" style="text-align: left; font-size:18px;margin-top: 15px">
-								Build and deliver world-class solutions and services for AASHTO and beyond.
-							</div>
-							<div class="col-sm-12" style="margin-top: 15px">
-								Icons will appear here.
+					</a>
+					<a id="myBtn1" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
+						<div class="col-sm-4" style="margin-bottom:20px">
+							<div class="single-service" style="width: 365px; height: 250px; position:relative">
+								<h4><span class="lnr" style="text-align: left; font-size:22px; font-weight: 500; margin-top:15px">AASHTOWare Products</span></h4>
+								<p style="text-align: left; font-size:18px;margin-top: 15px">
+									Build and deliver world-class solutions and services for AASHTO and beyond.
+								</p>
+								<div style="position:absolute; height:30px; bottom:0;">
+									Icons will appear here.
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-4" style="margin-bottom:20px">
-						<div class="polaroid">
-							<div class="col-sm-12" style="text-align: left; color:#0846B6; font-size:22px; font-weight: 500; margin-top:15px">
-								<button id="myBtn2" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
-									ITI Products
-								</button>
-							</div>
-							<div class="col-sm-12" style="text-align: left; font-size:18px;margin-top: 15px">
-								Be the platform of choice through which civil and infrastructure owners, contractors, and consultants exchange information; ensuring value 
-								promised is value delivered.
-							</div>
-							<div class="col-sm-12" style="margin-top: 15px">
-								Icons will appear here.
+					</a>
+					<a id="myBtn2" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
+						<div class="col-sm-4" style="margin-bottom:20px">
+							<div class="single-service" style="width: 365px; height: 250px; position:relative">
+								<h4><span class="lnr" style="text-align: left; font-size:22px; font-weight: 500; margin-top:15px">ITI Products</span></h4>
+								<p style="text-align: left; font-size:18px;margin-top: 15px">
+									Be the platform of choice through which civil and infrastructure owners, contractors, and consultants exchange information; ensuring value 
+									promised is value delivered.
+								</p>
+								<div style="position:absolute; height:30px; bottom:0;">
+									Icons will appear here.
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-4" style="margin-bottom:20px">
-						<div class="polaroid">
-							<div class="col-sm-12" style="text-align: left; color:#0846B6; font-size:22px; font-weight: 500; margin-top:15px">
-								<button id="myBtn3" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
-									Sales & Marketing
-								</button>
-							</div>
-							<div class="col-sm-12" style="text-align: left; font-size:18px;margin-top: 15px">
-								Expand Info Tech and AASHTOWare products and services to increase recurring revenue and broaden our customer base.
-							</div>
-							<div class="col-sm-12" style="margin-top: 15px">
-								Icons will appear here.
+					</a>
+					<a id="myBtn3" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
+						<div class="col-sm-4" style="margin-bottom:20px">
+							<div class="single-service" style="width: 365px; height: 250px; position:relative">
+								<h4><span class="lnr" style="text-align: left; font-size:22px; font-weight: 500; margin-top:15px">Sales & Marketing</span></h4>
+								<p style="text-align: left; font-size:18px;margin-top: 15px">
+									Expand Info Tech and AASHTOWare products and services to increase recurring revenue and broaden our customer base.
+								</p>
+								<div style="position:absolute; height:30px; bottom:0;">
+									Icons will appear here.
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-4" style="margin-bottom:20px">
-						<div class="polaroid">
-							<div class="col-sm-12" style="text-align: left; color:#0846B6; font-size:22px; font-weight: 500; margin-top:15px">
-								<button id="myBtn4" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
-									Operations
-								</button>
-							</div>
-							<div class="col-sm-12" style="text-align: left; font-size:18px;margin-top: 15px">
-								Advance progressive processes, infrastructure and operations that stimulate growth, performance and alignment. 
-							</div>
-							<div class="col-sm-12" style="margin-top: 15px">
-								Icons will appear here.
+					</a>
+					<a id="myBtn4" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
+						<div class="col-sm-4" style="margin-bottom:20px">
+							<div class="single-service" style="width: 365px; height: 250px; position:relative">
+								<h4><span class="lnr" style="text-align: left; font-size:22px; font-weight: 500; margin-top:15px">Operations</span></h4>
+								<p style="text-align: left; font-size:18px;margin-top: 15px">
+									Advance progressive processes, infrastructure and operations that stimulate growth, performance and alignment.
+								</p>
+								<div style="position:absolute; height:30px; bottom:0;">
+									Icons will appear here.
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-4" style="margin-bottom:20px">
-						<div class="polaroid">
-							<div class="col-sm-12" style="text-align: left; color:#0846B6; font-size:22px; font-weight: 500; margin-top:15px">
-								<button id="myBtn5" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
-									Talent, Strategy and<br />
-									<span style="float:left">Communications</span>
-								</button>
-							</div>
-							<div class="col-sm-12" style="text-align: left; font-size:18px;margin-top: 15px">
-								Engage a diverse family of collaborative professionals who pioneer innovation while advancing the company culture and brand.
-							</div>
-							<div class="col-sm-12" style="margin-top: 15px">
-								Icons will appear here.
+					</a>
+					<a id="myBtn5" style="background:none!important;color:inherit;border:none;padding:0!important;font: inherit;cursor: pointer;">
+						<div class="col-sm-4" style="margin-bottom:20px">
+							<div class="single-service" style="width: 365px; height: 250px; position:relative">
+								<h4><span class="lnr" style="text-align: left; font-size:22px; font-weight: 500; margin-top:15px">Talent, Strategy and<br />
+									Communications</span></h4>
+								<p style="text-align: left; font-size:18px;margin-top: 15px">
+									Engage a diverse family of collaborative professionals who pioneer innovation while advancing the company culture and brand.
+								</p>
+								<div style="position:absolute; height:30px; bottom:0;">
+									Icons will appear here.
+								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 					<div class="col-sm-4"></div> 
 				</div>
 			</div>
